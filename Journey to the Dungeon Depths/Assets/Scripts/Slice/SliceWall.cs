@@ -5,7 +5,6 @@ using UnityEngine;
 public class SliceWall : MonoBehaviour {
     private SpriteRenderer sprite;
 
-    private bool detecting = true;
     private new BoxCollider2D collider;
     private int cooldown = 10;
 
@@ -19,19 +18,19 @@ public class SliceWall : MonoBehaviour {
         Slice.finishAttack.AddListener(ResetCollision);
     }
 
-    private void Update() {
+    private void FixedUpdate() {
         if (cooldown > 0) {
             cooldown--;
             if (cooldown <= 0) {
-                detecting = true;
+                collider.enabled = true;
                 sprite.color = Color.white;
             }
         }
     }
 
     private void OnCollisionEnter2D(Collision2D other) {
-        if (other.gameObject.CompareTag("Slice") && detecting) {
-            detecting = false;
+        if (other.gameObject.CompareTag("Slice")) {
+            collider.enabled = false;
             sprite.color = Color.red;
             ContactPoint2D[] contacts = new ContactPoint2D[1];
             other.GetContacts(contacts);
@@ -41,6 +40,6 @@ public class SliceWall : MonoBehaviour {
     }
 
     private void ResetCollision() {
-        cooldown = 10;
+        cooldown = 5;
     }
 }

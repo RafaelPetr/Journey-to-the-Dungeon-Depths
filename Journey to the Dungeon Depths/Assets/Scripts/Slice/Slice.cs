@@ -76,16 +76,15 @@ public class Slice : MonoBehaviour {
     }
 
     private void ResetPosition(Vector2 position) {
-        trail.enabled = false;
         transform.position = position;
-        trail.enabled = true;
+        trail.Clear();
     }
 
     private void FinishAttack() {
-        trail.Clear();
         UpdateCollider();
         finishAttack.Invoke();
 
+        trail.Clear();
         attackLine.Clear();
     }
 
@@ -101,7 +100,7 @@ public class Slice : MonoBehaviour {
             lineRenderer.positionCount += 2;
             lineRenderer.SetPositions(attackLine.ToArray());
 
-            FinishAttack();
+            attackLine.Clear();
         }
     }
 }
