@@ -100,7 +100,7 @@ public class Slice : MonoBehaviour {
             lineRenderer.positionCount += 2;
             lineRenderer.SetPositions(attackLine.ToArray());
 
-            attackLine.Clear();
+            FinishAttack();
         }
     }
 }
