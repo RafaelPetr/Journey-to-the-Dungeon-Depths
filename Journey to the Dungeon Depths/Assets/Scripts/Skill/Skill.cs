@@ -4,6 +4,7 @@ using UnityEngine;
 
 [CreateAssetMenu(menuName = "Skill", fileName = "obj_skill_")]
 public class Skill : ScriptableObject {
+    private string skillName;
     private OffensiveComponent offensiveComponent;
     private List<EffectComponent> effectComponents = new List<EffectComponent>();
 }
