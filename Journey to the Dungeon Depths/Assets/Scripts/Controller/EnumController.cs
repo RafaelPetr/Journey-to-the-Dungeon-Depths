@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum TargetType {Self, Any, All, SingleOther, AnyOther, AllOther}
+public enum TargetType {Self, Multiple, All, SingleOther, MultipleOther, AllOther}
 
 public enum EffectType {Attribute, Immunity, Condition}
 

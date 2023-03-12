@@ -9,4 +9,8 @@ public class Character : MonoBehaviour {
 
     private Inventory inventory;
     private List<Effect> effects;
+
+    /*public void DealDamage(float damagePercent = 1f, Character target) {
+
+    }*/
 }
