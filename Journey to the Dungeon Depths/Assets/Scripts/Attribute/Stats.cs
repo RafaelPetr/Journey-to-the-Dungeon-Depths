@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Attributes", fileName = "obj_att_")]
-public class CharacterAttributes : ScriptableObject {
+[CreateAssetMenu(menuName = "Stats", fileName = "obj_stats_")]
+public class Stats : ScriptableObject {
     [SerializeField]private Attribute hp;
     [SerializeField]private Attribute sp;
     [SerializeField]private Attribute atk;
@@ -40,7 +40,7 @@ public class CharacterAttributes : ScriptableObject {
             return luk;
         }
 
-        public Attribute GetPhysRes() {
+        public Attribute GetPhysicalRes() {
             return physicalRes;
         }
 

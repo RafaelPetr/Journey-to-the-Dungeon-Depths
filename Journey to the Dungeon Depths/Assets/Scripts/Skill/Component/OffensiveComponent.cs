@@ -4,8 +4,8 @@ using UnityEngine;
 
 [System.Serializable]
 public class OffensiveComponent : SkillComponent {
-    private DamageType damageType;
-    private int damagePercent;
+    [SerializeField]private DamageType damageType;
+    [SerializeField]private int damagePercent;
 
     #region Getters
 

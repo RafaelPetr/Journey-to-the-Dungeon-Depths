@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Character : MonoBehaviour {
+public class Creature : MonoBehaviour {
     [SerializeField]private Animator animator;
-    [SerializeField]private CharacterAttributes attributes;
+    [SerializeField]private Stats stats;
     [SerializeField]private List<Skill> skills;
 
     private Inventory inventory;

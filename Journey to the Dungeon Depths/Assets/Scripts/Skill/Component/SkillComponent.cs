@@ -5,8 +5,9 @@ using UnityEngine;
 [System.Serializable]
 public class SkillComponent {
     protected TargetType targetType;
-    protected int numberTargets;
+    protected int numberTargets = 2;
     protected bool isRandom;
+    protected bool targetSelf;
 
     #region Getters
 
@@ -16,6 +17,10 @@ public class SkillComponent {
 
         public int GetNumberTargets() {
             return numberTargets;
+        }
+
+        public bool GetTargetSelf() {
+            return targetSelf;
         }
 
         public bool GetIsRandom() {
@@ -32,6 +37,10 @@ public class SkillComponent {
 
         public void SetNumberTargets(int numberTargets) {
             this.numberTargets = numberTargets;
+        }
+
+        public void SetTargetSelf(bool targetSelf) {
+            this.targetSelf = targetSelf;
         }
 
         public void SetIsRandom(bool isRandom) {

@@ -7,8 +7,28 @@ public class Skill : ScriptableObject {
     [SerializeField]private string skillName;
     [SerializeField,TextArea(3,10)]private string description;
 
-    [SerializeField]private OffensiveComponent offComponent = new OffensiveComponent();
+    private OffensiveComponent offComponent;
     [SerializeField]private List<EffectComponent> effComponents = new List<EffectComponent>();
+
+    #region Add
+
+        public void AddEffComponent(EffectComponent effComponent) {
+            effComponents.Add(effComponent);
+        }
+
+    #endregion
+
+    #region Remove
+
+        public void RemoveEffComponent(EffectComponent effComponent) {
+            effComponents.Remove(effComponent);
+        }
+
+        public void RemoveEffComponent(int index) {
+            effComponents.RemoveAt(index);
+        }
+
+    #endregion
 
     #region Getters
 
@@ -24,11 +44,11 @@ public class Skill : ScriptableObject {
             return offComponent;
         }
 
-        public List<EffectComponent> GetEffComponent() {
+        public List<EffectComponent> GetEffComponents() {
             return effComponents;
         }
 
-        public EffectComponent GetEffComponent(int index) {
+        public EffectComponent GetEffComponents(int index) {
             return effComponents[index];
         }
 
@@ -44,11 +64,11 @@ public class Skill : ScriptableObject {
             this.description = description;
         }
 
-        public void SetOffensive(OffensiveComponent offComponent) {
+        public void SetOffComponent(OffensiveComponent offComponent) {
             this.offComponent = offComponent;
         }
 
-        public void SetEffectComponents(List<EffectComponent> effComponents) {
+        public void SetEffComponents(List<EffectComponent> effComponents) {
             this.effComponents = effComponents;
         }
 

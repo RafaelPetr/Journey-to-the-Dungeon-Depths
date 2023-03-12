@@ -3,64 +3,63 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-[CustomEditor(typeof(CharacterAttributes))]
-public class AttributesEditor : Editor {
+[CustomEditor(typeof(Stats))]
+public class statsEditor : Editor {
     public override void OnInspectorGUI() {
-        CharacterAttributes attributes = (CharacterAttributes)target;
+        Stats stats = (Stats)target;
 
         GUILayout.BeginHorizontal();
             GUILayout.Label("HP:");
-            attributes.SetHp(EditorGUILayout.IntField(attributes.GetHp().GetValue()));
+            stats.SetHp(EditorGUILayout.IntField(stats.GetHp().GetValue()));
         GUILayout.EndHorizontal();
 
         GUILayout.BeginHorizontal();
             GUILayout.Label("SP:");
-            attributes.SetSp(EditorGUILayout.IntField(attributes.GetSp().GetValue()));
+            stats.SetSp(EditorGUILayout.IntField(stats.GetSp().GetValue()));
         GUILayout.EndHorizontal();
 
         GUILayout.BeginHorizontal();
             GUILayout.Label("ATK:");
-            attributes.SetAtk(EditorGUILayout.IntField(attributes.GetAtk().GetValue()));
+            stats.SetAtk(EditorGUILayout.IntField(stats.GetAtk().GetValue()));
         GUILayout.EndHorizontal();
 
         GUILayout.BeginHorizontal();
             GUILayout.Label("MAG:");
-            attributes.SetMag(EditorGUILayout.IntField(attributes.GetMag().GetValue()));
+            stats.SetMag(EditorGUILayout.IntField(stats.GetMag().GetValue()));
         GUILayout.EndHorizontal();
 
         GUILayout.BeginHorizontal();
             GUILayout.Label("AGI:");
-            attributes.SetAgi(EditorGUILayout.IntField(attributes.GetAgi().GetValue()));
+            stats.SetAgi(EditorGUILayout.IntField(stats.GetAgi().GetValue()));
         GUILayout.EndHorizontal();
 
         GUILayout.BeginHorizontal();
             GUILayout.Label("LUK:");
-            attributes.SetLuk(EditorGUILayout.IntField(attributes.GetLuk().GetValue()));
+            stats.SetLuk(EditorGUILayout.IntField(stats.GetLuk().GetValue()));
         GUILayout.EndHorizontal();
 
         EditorGUILayout.LabelField("",GUI.skin.horizontalSlider);
-        GUILayout.Label("Resistences:");
 
         GUILayout.BeginHorizontal();
 
             GUILayout.BeginVertical();
                 GUILayout.Label("Physical:");
-                attributes.SetPhysRes(EditorGUILayout.IntField(attributes.GetPhysRes().GetValue()));
+                stats.SetPhysRes(EditorGUILayout.IntField(stats.GetPhysicalRes().GetValue()));
             GUILayout.EndVertical();
 
             GUILayout.BeginVertical();
                 GUILayout.Label("Fire:");
-                attributes.SetFireRes(EditorGUILayout.IntField(attributes.GetFireRes().GetValue()));
+                stats.SetFireRes(EditorGUILayout.IntField(stats.GetFireRes().GetValue()));
             GUILayout.EndVertical();
 
             GUILayout.BeginVertical();
                 GUILayout.Label("Lightning:");
-                attributes.SetLightningRes(EditorGUILayout.IntField(attributes.GetLightningRes().GetValue()));
+                stats.SetLightningRes(EditorGUILayout.IntField(stats.GetLightningRes().GetValue()));
             GUILayout.EndVertical();
 
             GUILayout.BeginVertical();
                 GUILayout.Label("Water:");
-                attributes.SetWaterRes(EditorGUILayout.IntField(attributes.GetWaterRes().GetValue()));
+                stats.SetWaterRes(EditorGUILayout.IntField(stats.GetWaterRes().GetValue()));
             GUILayout.EndVertical();
        
         GUILayout.EndHorizontal();
@@ -69,9 +68,9 @@ public class AttributesEditor : Editor {
 
         GUILayout.BeginHorizontal();
             GUILayout.Label("Damage Type:");
-            attributes.SetDamageType((DamageType)EditorGUILayout.EnumPopup(attributes.GetDamageType()));
+            stats.SetDamageType((DamageType)EditorGUILayout.EnumPopup(stats.GetDamageType()));
         GUILayout.EndHorizontal();
         
-        EditorUtility.SetDirty(attributes);
+        EditorUtility.SetDirty(stats);
     } 
 }

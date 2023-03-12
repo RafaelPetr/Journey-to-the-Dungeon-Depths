@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afc34b8461e8aed4da6ed65eabe72224, type: 3}
-  m_Name: obj_att_warrior
+  m_Script: {fileID: 11500000, guid: 5b0b23e2e21dad448a04be75be5ead73, type: 3}
+  m_Name: obj_stats_warrior
   m_EditorClassIdentifier: 
   hp:
     value: 0
