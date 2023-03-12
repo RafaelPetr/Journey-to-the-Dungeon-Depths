@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum ItemType {Consumable, Equipment, Key}
+
 public enum TargetType {Single, Multiple, All}
 
 public enum EffectType {Attribute, Immunity, Condition}

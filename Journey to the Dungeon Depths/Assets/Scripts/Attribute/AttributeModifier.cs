@@ -4,9 +4,9 @@ using UnityEngine;
 
 [System.Serializable]
 public class AttributeModifier {
-    private int value;
-    private AttributeType attributeType;
-    private AttributeModifierType modifierType;
+    [SerializeField]private int value;
+    [SerializeField]private AttributeType attributeType;
+    [SerializeField]private AttributeModifierType modifierType;
 
     #region Getters
 

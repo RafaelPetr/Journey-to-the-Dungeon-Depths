@@ -4,12 +4,12 @@ using UnityEngine;
 
 [System.Serializable]
 public class EffectComponent : SkillComponent {
-    private EffectType type;
-    private bool isPositive, isPermanent;
-    private int duration;
+    [SerializeField]private EffectType type;
+    [SerializeField]private bool isPositive, isPermanent;
+    [SerializeField]private int duration;
 
-    private AttributeModifier attributeModifier;
-    private ConditionType conditionType;
+    [SerializeField]private AttributeModifier attributeModifier = new AttributeModifier();
+    [SerializeField]private ConditionType conditionType;
 
     #region Getters
 

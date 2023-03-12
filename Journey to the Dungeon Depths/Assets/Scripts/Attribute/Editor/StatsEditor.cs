@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEditor;
 
 [CustomEditor(typeof(Stats))]
-public class statsEditor : Editor {
+public class StatsEditor : Editor {
     public override void OnInspectorGUI() {
         Stats stats = (Stats)target;
 

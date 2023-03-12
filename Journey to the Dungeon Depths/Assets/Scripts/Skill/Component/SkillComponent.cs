@@ -4,10 +4,10 @@ using UnityEngine;
 
 [System.Serializable]
 public class SkillComponent {
-    protected TargetType targetType;
-    protected int numberTargets = 2;
-    protected bool isRandom;
-    protected bool targetSelf;
+    [SerializeField]protected TargetType targetType;
+    [SerializeField]protected int numberTargets = 2;
+    [SerializeField]protected bool isRandom;
+    [SerializeField]protected bool targetSelf;
 
     #region Getters
 

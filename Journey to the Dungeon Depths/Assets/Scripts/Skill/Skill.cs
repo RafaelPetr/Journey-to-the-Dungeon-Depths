@@ -7,7 +7,7 @@ public class Skill : ScriptableObject {
     [SerializeField]private string skillName;
     [SerializeField,TextArea(3,10)]private string description;
 
-    private OffensiveComponent offComponent;
+    [SerializeField]private OffensiveComponent offComponent;
     [SerializeField]private List<EffectComponent> effComponents = new List<EffectComponent>();
 
     #region Add
