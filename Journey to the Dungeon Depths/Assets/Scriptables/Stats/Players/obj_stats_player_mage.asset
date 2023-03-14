@@ -10,20 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b0b23e2e21dad448a04be75be5ead73, type: 3}
-  m_Name: obj_stats_warrior
+  m_Name: obj_stats_player_mage
   m_EditorClassIdentifier: 
   hp:
-    value: 0
+    value: 8
   sp:
-    value: 0
+    value: 10
   atk:
-    value: 0
+    value: 6
   mag:
-    value: 0
+    value: 10
   agi:
-    value: 0
-  luk:
-    value: 0
+    value: 8
   damageType: 0
   physicalRes:
     value: 0

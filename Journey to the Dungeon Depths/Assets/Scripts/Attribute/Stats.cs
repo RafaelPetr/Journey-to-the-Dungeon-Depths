@@ -9,7 +9,6 @@ public class Stats : ScriptableObject {
     [SerializeField]private Attribute atk;
     [SerializeField]private Attribute mag;
     [SerializeField]private Attribute agi;
-    [SerializeField]private Attribute luk;
 
     [SerializeField]private DamageType damageType;
     [SerializeField]private Attribute physicalRes, fireRes, lightningRes, waterRes;
@@ -34,10 +33,6 @@ public class Stats : ScriptableObject {
 
         public Attribute GetAgi() {
             return agi;
-        }
-
-        public Attribute GetLuk() {
-            return luk;
         }
 
         public Attribute GetPhysicalRes() {
@@ -82,10 +77,6 @@ public class Stats : ScriptableObject {
 
         public void SetAgi(int agi) {
             this.agi.SetValue(agi);
-        }
-
-        public void SetLuk(int luk) {
-            this.luk.SetValue(luk);
         }
 
         public void SetPhysRes(int physRes) {

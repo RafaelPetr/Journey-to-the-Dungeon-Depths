@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b0b23e2e21dad448a04be75be5ead73, type: 3}
+  m_Name: obj_stats_player_ranger
+  m_EditorClassIdentifier: 
+  hp:
+    value: 10
+  sp:
+    value: 8
+  atk:
+    value: 11
+  mag:
+    value: 7
+  agi:
+    value: 10
+  damageType: 0
+  physicalRes:
+    value: 0
+  fireRes:
+    value: 0
+  lightningRes:
+    value: 0
+  waterRes:
+    value: 0

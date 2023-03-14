@@ -6,13 +6,13 @@ public enum ItemType {Consumable, Equipment, Key}
 
 public enum TargetType {Single, Multiple, All}
 
-public enum EffectType {Attribute, Immunity, Condition}
+public enum EffectType {Attribute, Damage, Immunity, Condition}
 
-public enum DamageType {Physical, Water, Lightning, Fire, Random}
+public enum DamageType {Physical, Water, Lightning, Fire, Neutral, Random}
 
 public enum ConditionType {Burn, Poison, Confusion, Paralysis, Freeze, Sleep, Stun, Random}
 
-public enum AttributeType {Hp, Sp, Atk, Mag, PhysicalRes, WaterRes, LightningRes, FireRes, Agi, Luk, Random}
+public enum AttributeType {Hp, Sp, Atk, Mag, PhysicalRes, WaterRes, LightningRes, FireRes, Agi, AtkType, Random}
 
 public enum AttributeModifierType {Add, Multiplier, Percent}
 

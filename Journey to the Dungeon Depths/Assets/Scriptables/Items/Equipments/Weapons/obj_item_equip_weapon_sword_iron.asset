@@ -9,26 +9,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 250d6056d9ed98246bdbf938ac243440, type: 3}
-  m_Name: obj_skill_whirlwind
+  m_Script: {fileID: 11500000, guid: b0a3dc2c13106124b9bafb8e38e08530, type: 3}
+  m_Name: obj_item_equip_weapon_sword_iron
   m_EditorClassIdentifier: 
-  skillName: Redemoinho
-  description: "Um ataque f\xEDsico em \xE1rea que causa -20% de dano em todos inimigos."
+  itemName: Espada de Ferro
+  description: Uma espada simples de ferro usada por guerreiros iniciantes.
   sprite: {fileID: 0}
   effects:
-  - targetType: 2
+  - targetType: 0
     numberTargets: 2
     isRandom: 0
-    targetSelf: 0
-    type: 1
-    show: 0
+    targetSelf: 1
+    type: 0
+    show: 1
     isPositive: 0
-    isPermanent: 0
+    isPermanent: 1
     duration: 0
     attributeModifier:
-      value: -5
+      value: 10
       attributeType: 2
       modifierType: 0
     conditionType: 0
-    damageModifier: -20
+    damageModifier: 0
     damageType: 0

@@ -6,26 +6,26 @@ using UnityEngine;
 public class Skill : ScriptableObject {
     [SerializeField]private string skillName;
     [SerializeField,TextArea(3,10)]private string description;
+    [SerializeField]private Sprite sprite;
 
-    [SerializeField]private OffensiveComponent offComponent;
-    [SerializeField]private List<EffectComponent> effComponents = new List<EffectComponent>();
+    [SerializeField]private List<EffectCreator> effects = new List<EffectCreator>();
 
     #region Add
 
-        public void AddEffComponent(EffectComponent effComponent) {
-            effComponents.Add(effComponent);
+        public void AddEffect(EffectCreator effect) {
+            effects.Add(effect);
         }
 
     #endregion
 
     #region Remove
 
-        public void RemoveEffComponent(EffectComponent effComponent) {
-            effComponents.Remove(effComponent);
+        public void RemoveEffect(EffectCreator effect) {
+            effects.Remove(effect);
         }
 
-        public void RemoveEffComponent(int index) {
-            effComponents.RemoveAt(index);
+        public void RemoveEffect(int index) {
+            effects.RemoveAt(index);
         }
 
     #endregion
@@ -40,16 +40,16 @@ public class Skill : ScriptableObject {
             return description;
         }
 
-        public OffensiveComponent GetOffComponent() {
-            return offComponent;
+        public Sprite GetSprite() {
+            return sprite;
         }
 
-        public List<EffectComponent> GetEffComponents() {
-            return effComponents;
+        public List<EffectCreator> GetEffects() {
+            return effects;
         }
 
-        public EffectComponent GetEffComponents(int index) {
-            return effComponents[index];
+        public EffectCreator GetEffects(int index) {
+            return effects[index];
         }
 
     #endregion
@@ -64,12 +64,12 @@ public class Skill : ScriptableObject {
             this.description = description;
         }
 
-        public void SetOffComponent(OffensiveComponent offComponent) {
-            this.offComponent = offComponent;
+        public void SetSprite(Sprite sprite) {
+            this.sprite = sprite;
         }
 
-        public void SetEffComponents(List<EffectComponent> effComponents) {
-            this.effComponents = effComponents;
+        public void SetEffects(List<EffectCreator> effects) {
+            this.effects = effects;
         }
 
     #endregion

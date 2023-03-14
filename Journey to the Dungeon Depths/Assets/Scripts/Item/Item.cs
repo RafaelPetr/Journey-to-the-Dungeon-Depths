@@ -2,32 +2,31 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Item", fileName = "obj_item_")]
-public class Item : ScriptableObject {
+public abstract class Item : ScriptableObject {
     [SerializeField]protected string itemName;
     [SerializeField,TextArea(3,10)]protected string description;
 
     [SerializeField]protected Sprite sprite;
-    [SerializeField]protected List<EffectComponent> effComponents = new List<EffectComponent>();
+    [SerializeField]protected List<EffectCreator> effects = new List<EffectCreator>();
 
-    public virtual void Use() {}
+    public abstract void Use();
 
     #region Add
 
-        public void AddEffComponent(EffectComponent effComponent) {
-            effComponents.Add(effComponent);
+        public void AddEffect(EffectCreator effect) {
+            effects.Add(effect);
         }
 
     #endregion
 
     #region Remove
 
-        public void RemoveEffComponent(EffectComponent effComponent) {
-            effComponents.Remove(effComponent);
+        public void RemoveEffect(EffectCreator effect) {
+            effects.Remove(effect);
         }
 
-        public void RemoveEffComponent(int index) {
-            effComponents.RemoveAt(index);
+        public void RemoveEffect(int index) {
+            effects.RemoveAt(index);
         }
 
     #endregion
@@ -46,12 +45,12 @@ public class Item : ScriptableObject {
             return sprite;
         }
 
-        public List<EffectComponent> GetEffComponents() {
-            return effComponents;
+        public List<EffectCreator> GetEffects() {
+            return effects;
         }
 
-        public EffectComponent GetEffComponents(int index) {
-            return effComponents[index];
+        public EffectCreator GetEffects(int index) {
+            return effects[index];
         }
 
     #endregion
@@ -70,8 +69,8 @@ public class Item : ScriptableObject {
             this.sprite = sprite;
         }
 
-        public void SetEffDescriptions(List<EffectComponent> effComponents) {
-            this.effComponents = effComponents;
+        public void SetEffects(List<EffectCreator> effects) {
+            this.effects = effects;
         }
 
     #endregion

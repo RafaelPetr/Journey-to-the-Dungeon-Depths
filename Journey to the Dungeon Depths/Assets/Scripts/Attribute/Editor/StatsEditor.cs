@@ -33,11 +33,6 @@ public class StatsEditor : Editor {
             stats.SetAgi(EditorGUILayout.IntField(stats.GetAgi().GetValue()));
         GUILayout.EndHorizontal();
 
-        GUILayout.BeginHorizontal();
-            GUILayout.Label("LUK:");
-            stats.SetLuk(EditorGUILayout.IntField(stats.GetLuk().GetValue()));
-        GUILayout.EndHorizontal();
-
         EditorGUILayout.LabelField("",GUI.skin.horizontalSlider);
 
         GUILayout.BeginHorizontal();
