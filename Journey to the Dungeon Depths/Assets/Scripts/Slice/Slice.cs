@@ -92,8 +92,6 @@ public class Slice : MonoBehaviour {
         attackLine.Add(position);
 
         if (attackLine.Count == 2) {
-            //Debug.Log($"Attack from {attackLine[0]} to {attackLine[1]}");
-
             GameObject newAttack = Instantiate(attackPrefab);
             LineRenderer lineRenderer = newAttack.GetComponent<LineRenderer>();
 

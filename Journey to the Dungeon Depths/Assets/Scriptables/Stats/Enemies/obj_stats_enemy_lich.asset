@@ -10,29 +10,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b0b23e2e21dad448a04be75be5ead73, type: 3}
-  m_Name: obj_stats_player_warrior
+  m_Name: obj_stats_enemy_lich
   m_EditorClassIdentifier: 
   hp:
-    value: 13
-    growthType: 2
-  sp:
-    value: 9
+    value: 15
     growthType: 1
+  sp:
+    value: 15
+    growthType: 2
   atk:
-    value: 11
+    value: 15
     growthType: 1
   mag:
-    value: 8
-    growthType: 0
-  def:
-    value: 12
+    value: 15
     growthType: 2
-  magDef:
-    value: 8
+  def:
+    value: 15
     growthType: 1
+  magDef:
+    value: 15
+    growthType: 2
   agi:
-    value: 9
-    growthType: 0
+    value: 15
+    growthType: 1
   damageType: 0
   fireRes:
     value: 0
@@ -44,4 +44,4 @@ MonoBehaviour:
     value: 0
     growthType: 0
   hasDifficulty: 1
-  difficulty: 1
+  difficulty: 2

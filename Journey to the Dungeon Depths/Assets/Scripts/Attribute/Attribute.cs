@@ -5,6 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class Attribute {
     [SerializeField]private int value;
+    [SerializeField]private AttributeGrowthType growthType;
     private List<AttributeModifier> modifiers;
 
     #region Add
@@ -33,6 +34,10 @@ public class Attribute {
             return value;
         }
 
+        public AttributeGrowthType GetLevelType() {
+            return growthType;
+        }
+
         public List<AttributeModifier> GetModifiers() {
             return modifiers;
         }
@@ -47,6 +52,10 @@ public class Attribute {
 
         public void SetValue(int value) {
             this.value = value;
+        }
+
+        public void SetLevelType(AttributeGrowthType growthType) {
+            this.growthType = growthType;
         }
 
         public void SetModifiers(List<AttributeModifier> modifiers) {

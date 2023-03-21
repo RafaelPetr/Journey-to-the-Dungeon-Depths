@@ -3,29 +3,29 @@ guid: 5b5bd284fb303194fb2e7d82a848d57a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4383643546429128195
-    second: spr_mob_slime_0
+      213: -2927846241304691848
+    second: spr_enemy_slime_0
   - first:
-      213: 4405829736900399332
-    second: spr_mob_slime_1
+      213: -1208868941205750215
+    second: spr_enemy_slime_1
   - first:
-      213: 2106454686726368392
-    second: spr_mob_slime_2
+      213: 6853057204558054072
+    second: spr_enemy_slime_2
   - first:
-      213: -4283094521220178776
-    second: spr_mob_slime_3
+      213: 6034623220178560516
+    second: spr_enemy_slime_3
   - first:
-      213: 6152306241027955920
-    second: spr_mob_slime_4
+      213: -3986790695413790289
+    second: spr_enemy_slime_4
   - first:
-      213: -6218591112144804683
-    second: spr_mob_slime_5
+      213: -1036249384316149975
+    second: spr_enemy_slime_5
   - first:
-      213: -7317030421177948439
-    second: spr_mob_slime_6
+      213: 7958107771379503430
+    second: spr_enemy_slime_6
   - first:
-      213: 794214089687433815
-    second: spr_mob_slime_7
+      213: -8463026740732124555
+    second: spr_enemy_slime_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -151,7 +151,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: spr_mob_slime_0
+      name: spr_enemy_slime_0
       rect:
         serializedVersion: 2
         x: 0
@@ -165,14 +165,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df188298b6b2a23c0800000000000000
-      internalID: -4383643546429128195
+      spriteID: 87b321e1b533e57d0800000000000000
+      internalID: -2927846241304691848
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_mob_slime_1
+      name: spr_enemy_slime_1
       rect:
         serializedVersion: 2
         x: 64
@@ -186,14 +186,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e01dc87dc6a42d30800000000000000
-      internalID: 4405829736900399332
+      spriteID: 93ebd635a1c393fe0800000000000000
+      internalID: -1208868941205750215
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_mob_slime_2
+      name: spr_enemy_slime_2
       rect:
         serializedVersion: 2
         x: 128
@@ -207,14 +207,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88c28c98061ab3d10800000000000000
-      internalID: 2106454686726368392
+      spriteID: 8b24d1fe733fa1f50800000000000000
+      internalID: 6853057204558054072
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_mob_slime_3
+      name: spr_enemy_slime_3
       rect:
         serializedVersion: 2
         x: 192
@@ -228,14 +228,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8acdf3bc9346f84c0800000000000000
-      internalID: -4283094521220178776
+      spriteID: 406211098d94fb350800000000000000
+      internalID: 6034623220178560516
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_mob_slime_4
+      name: spr_enemy_slime_4
       rect:
         serializedVersion: 2
         x: 256
@@ -249,14 +249,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0dcd3ed0ee1616550800000000000000
-      internalID: 6152306241027955920
+      spriteID: fa947064cf21ca8c0800000000000000
+      internalID: -3986790695413790289
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_mob_slime_5
+      name: spr_enemy_slime_5
       rect:
         serializedVersion: 2
         x: 320
@@ -270,14 +270,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b4253db45023b9a0800000000000000
-      internalID: -6218591112144804683
+      spriteID: 92f5e1ddca08e91f0800000000000000
+      internalID: -1036249384316149975
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_mob_slime_6
+      name: spr_enemy_slime_6
       rect:
         serializedVersion: 2
         x: 384
@@ -291,14 +291,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e626f6699fa47a90800000000000000
-      internalID: -7317030421177948439
+      spriteID: 641d95daad0e07e60800000000000000
+      internalID: 7958107771379503430
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_mob_slime_7
+      name: spr_enemy_slime_7
       rect:
         serializedVersion: 2
         x: 448
@@ -312,8 +312,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7520e63b18d950b00800000000000000
-      internalID: 794214089687433815
+      spriteID: 572a702b40a4d8a80800000000000000
+      internalID: -8463026740732124555
       vertices: []
       indices: 
       edges: []

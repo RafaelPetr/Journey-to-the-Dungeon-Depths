@@ -10,24 +10,38 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b0b23e2e21dad448a04be75be5ead73, type: 3}
-  m_Name: obj_stats_player_ranger
+  m_Name: obj_stats_enemy_slime
   m_EditorClassIdentifier: 
   hp:
-    value: 10
+    value: 5
+    growthType: 1
   sp:
-    value: 8
+    value: 5
+    growthType: 1
   atk:
-    value: 11
+    value: 5
+    growthType: 1
   mag:
-    value: 7
+    value: 5
+    growthType: 1
+  def:
+    value: 5
+    growthType: 1
+  magDef:
+    value: 5
+    growthType: 1
   agi:
-    value: 10
+    value: 5
+    growthType: 1
   damageType: 0
-  physicalRes:
-    value: 0
   fireRes:
     value: 0
+    growthType: 0
   lightningRes:
     value: 0
-  waterRes:
+    growthType: 0
+  iceRes:
     value: 0
+    growthType: 0
+  hasDifficulty: 1
+  difficulty: 0

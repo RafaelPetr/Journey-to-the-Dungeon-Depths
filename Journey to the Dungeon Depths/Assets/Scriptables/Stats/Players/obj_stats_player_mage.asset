@@ -14,20 +14,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp:
     value: 8
+    growthType: 0
   sp:
-    value: 10
+    value: 11
+    growthType: 2
   atk:
-    value: 6
-  mag:
-    value: 10
-  agi:
     value: 8
+    growthType: 0
+  mag:
+    value: 13
+    growthType: 2
+  def:
+    value: 8
+    growthType: 0
+  magDef:
+    value: 12
+    growthType: 2
+  agi:
+    value: 10
+    growthType: 1
   damageType: 0
-  physicalRes:
-    value: 0
   fireRes:
     value: 0
+    growthType: 0
   lightningRes:
     value: 0
-  waterRes:
+    growthType: 0
+  iceRes:
     value: 0
+    growthType: 0
+  hasDifficulty: 1
+  difficulty: 1
